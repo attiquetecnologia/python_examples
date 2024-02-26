@@ -11,7 +11,13 @@ produtos = [
     ,{"id": 109, "descricao": "Computador", "preco": 3999.23}
     ,{"id": 11, "descricao": "Roteador", "preco": 199.23}
 ]
-cliente = {}
+cliente = {
+
+}
+
+produtos_cliente = [
+    {"id":1, "id_cliente": 1, "id_prouto": 109, 'qtd': 2,}
+]
 
 print("Escolha um produto")
 for i in range(len(produtos)):

@@ -6,9 +6,6 @@ def media(dados=[]):
     """
     return sum(dados)/len(dados)
 
-valores = [10, 9, 7]
-print(f"A média entre 10, 9, 7 é {media(valores)}")
-
 def menu():
     return """
         Menu
@@ -17,7 +14,14 @@ def menu():
         3 - Sair
     """
 
-print(menu())
-
 def formata(dia, mes, ano):
-    print(f"{dia}/{mes}/{ano}")
+    return f"{dia}/{mes}/{ano}"
+
+def formato_moeda(valor):
+    valor = "R$ {:.2f}".format(valor)
+    # troca ponto por virgula
+    valor = valor.replace(".", ",")
+    return f"{valor}"
+
+def area_total(largura, altura):
+    return largura*altura
