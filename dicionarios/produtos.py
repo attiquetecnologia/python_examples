@@ -15,7 +15,7 @@ cliente = {
 
 }
 
-produtos_cliente = [
+itens_carrinho = [
     {"id":1, "id_cliente": 1, "id_prouto": 109, 'qtd': 2,}
 ]
 
