@@ -103,6 +103,6 @@ def maior_2000_sexo(lista, sexo='Masculino'):
         # precisa comparar a maior idade agora
         if maior_idade == 0:
             maior_idade = l["idade"]
-        elif l['idade'] < menor_idade:
+        elif l['idade'] > maior_idade:
             maior_idade = l['idade']
     return (menor_idade, maior_idade)
