@@ -3,7 +3,7 @@ console.log("Teste execução");
 // console.time("meu time");
 function incremento(){
     var aux = 0;
-    for (var i=0; i<=1000; i++) {
+    for (var i=0; i<=1000000000; i++) {
         aux += i;
     }
     return aux;
@@ -22,9 +22,17 @@ incremento()
 fim = console.timeEnd();
 // console.timeEnd("fim tempo");
 console.log("Tempo total incremento JS =>");
+// >>> default: 865.757ms
 
 inicio = console.time();
 loop();
 fim = console.timeEnd();
 // console.timeEnd("fim tempo");
 console.log("Tempo total loop JS =>");
+// >>> default: 657.211ms
+
+// CONCLUSÃO
+//  Comparando os resultados com python é possível ver que as técnicas de otimização
+// fizeram o script .py ficar ligeiramente mais rápido, diferença de 1ms, entretanto
+// e também que o node é sim realmente mais rápido do que python, porém ao rodar o
+// script diretamente no browser a diferença de desempenho em favor do python é brutal.
