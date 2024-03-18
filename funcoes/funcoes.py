@@ -29,6 +29,15 @@ def area_total(largura, altura):
 def somar(a: int, b: int) -> int:
     return a + b
 
+# ultimo id
+def ultimo_id(dados: list)->int:
+    ultimo_id = 0
+    for d in dados:
+        if d["id"] > ultimo_id:
+            ultimo_id = d["id"]
+
+    return ultimo_id
+
 if __name__ == "__main__":
     a = int(input("Diga um numero: "))
     b = int(input("Diga outro numero: "))
