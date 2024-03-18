@@ -1,6 +1,6 @@
-j = input("Você está em jejum s/n? ")
-t = input("Trigliceres? ")
-t = int(t) # converter pra int
+j: str = input("Você está em jejum s/n? ")
+t: str = input("Trigliceres? ")
+t: int = int(t) # converter pra int
 if j == 's':
     if t > 150:
         print("Está alto!")
