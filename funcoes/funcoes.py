@@ -25,3 +25,12 @@ def formato_moeda(valor):
 
 def area_total(largura, altura):
     return largura*altura
+
+def somar(a: int, b: int) -> int:
+    return a + b
+
+if __name__ == "__main__":
+    a = int(input("Diga um numero: "))
+    b = int(input("Diga outro numero: "))
+    result = somar(a, b)
+    print(f"A soma de {a} e {b} é {result}")
