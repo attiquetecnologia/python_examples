@@ -54,3 +54,25 @@ with open("dados.json", "r") as file: # abre o arquivo em modo leitura (read)
 # Crie uma função para fazer a leitura do conteúdo do arquivo json e retornar uma lista de
 # dicionários
 # Crie outra função para adicionar registros ao arquivo de dados.
+def readfile(filename: str) -> str:
+    """
+    filename: nome do arquivo
+    return: uma string com o conteúdo do mesmo
+
+    Uso
+    file = json.loads(readfile("data.json"))
+    """
+    with open(filename, 'r') as file:
+        return file.read()
+
+def writefile(filename: str, content: str) -> bool:
+    """
+    filename: nome do arquivo
+    content: conteúdo para inserir no arquivo
+    return: um bool para sucesso/fracasso da operação
+
+    Uso
+    file = writefile("data.json",json.dumps(dict))
+    """
+    with open(filename, 'w') as file:
+        return file.write(content) > 0
