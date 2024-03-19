@@ -1,5 +1,5 @@
-alunos = {
-    1: {"nome": "Batman", "t": 9}
+alunos: dict = {
+    1: {"nome": "Batman", "t": 9, "nota": 7}
     ,2: {"nome": "Homem Sereia", "nota": 7}
     ,3: {"nome": "Mechilãozinho", "nota": 5}
     ,4: {"nome": "Hellboy", "nota": 2}

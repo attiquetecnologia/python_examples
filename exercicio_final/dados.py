@@ -1,5 +1,5 @@
 from datetime import date
-medicoes = [
+medicoes: list = [
     {"caminhao": "12400", "data": date(2024,1,2), "medicao": 12980, "litros": 300}
     ,{"caminhao": "12300", "data": date(2024,1,2), "medicao": 12480, "litros": 300}
     ,{"caminhao": "12400", "data": date(2024,1,3), "medicao": 14285, "litros": 290}
