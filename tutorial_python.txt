@@ -1,0 +1,4 @@
+O que é python?
+
+Python é uma linguagem de programação de alto nível e tipagem dinâmica forte.
+
