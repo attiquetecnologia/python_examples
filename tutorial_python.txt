@@ -1,0 +1,13 @@
+O que é python?
+
+Python é uma linguagem de programação de alto nível e tipagem dinâmica forte.
+
+download do python
+acesso o site python.org
+
+Instalar o python
+1.Entre no site python.org.br
+2.Faça o donwload para seu computador
+3.execute o instalador
+4.siga o assistente
+
