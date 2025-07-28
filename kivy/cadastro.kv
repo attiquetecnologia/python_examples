@@ -1,0 +1,67 @@
+<Tela>:
+    name: 'formulario_screen'
+    canvas:
+        Color:
+            rgba: (0.95, 0.95, 0.9, 1.0) # Um pastel suave para o fundo da tela
+        Rectangle:
+            pos: self.pos
+            size: self.size
+
+    # O GridLayout será o container principal para os elementos do formulário
+    GridLayout:
+        cols: 2 # Duas colunas: uma para o rótulo, outra para o campo de entrada
+        spacing: 10 # Espaço entre os widgets
+        padding: 30 # Espaço nas bordas do layout
+        size_hint: 0.8, 0.8 # Ocupa 80% da largura e altura da tela
+        pos_hint: {'center_x': 0.5, 'center_y': 0.5} # Centraliza o GridLayout na tela
+
+        # Linha 1: Nome
+        Label:
+            text: 'Nome:'
+            halign: 'right' # Alinha o texto do rótulo à direita
+            valign: 'middle'
+            text_size: self.size # Importante para que halign funcione
+        TextInput:
+            id: nome_input
+            multiline: False # Não permite múltiplas linhas
+            hint_text: 'Digite seu nome completo' # Texto de dica
+
+        # Linha 2: E-mail
+        Label:
+            text: 'E-mail:'
+            halign: 'right'
+            valign: 'middle'
+            text_size: self.size
+        TextInput:
+            id: email_input
+            multiline: False
+            hint_text: 'seu.email@example.com'
+            input_type: 'text' # Tipo de teclado para e-mail
+            input_filter: 'email' # Sugestão, Kivy não valida e-mail automaticamente, mas pode ajudar no teclado
+
+        # Linha 3: Senha
+        Label:
+            text: 'Senha:'
+            halign: 'right'
+            valign: 'middle'
+            text_size: self.size
+        TextInput:
+            id: senha_input
+            multiline: False
+            password: True # Esconde o texto digitado
+            hint_text: 'Crie uma senha forte'
+
+        # Linha 4: Botão de Enviar (spanning across 2 columns)
+        # Usamos um BoxLayout para o botão para dar flexibilidade, mas poderia ser um Button direto
+        BoxLayout:
+            cols: 1 # Este BoxLayout tem apenas uma coluna
+            size_hint_y: None # Não permite que o BoxLayout se estique verticalmente
+            height: dp(50) # Altura fixa para o botão container
+            padding: [0, 10, 0, 0] # Adiciona um pouco de padding no topo para separar do campo anterior
+            # Ocupa as 2 colunas do GridLayout pai
+            GridLayout.size_hint_x: 2 # Não é diretamente cols, mas sim o size_hint_x
+
+            Button:
+                id: submit_button
+                text: 'Enviar Cadastro'
+                on_release: app.root.submit_form() # Chama um método na classe App.root (neste caso, FormularioTela)
