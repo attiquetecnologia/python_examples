@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 """ Joquenpo - Pedra, Papel,Tesoura
+=======
+""" Jocker Po - Pedra, Papel,Tesoura
+>>>>>>> 26ff4177925b46ac2693dfa9ecd4c26488237f73
 Jogo para dois jogadores sem interação com usuário
 Pedra > Tesoura > Papel > Pedra
 Se Jogador1: Papel e Jogador2: Pedra, Jogador1
