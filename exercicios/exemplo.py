@@ -1,6 +1,7 @@
 # Primeiro programa
 print("Hello World!")
 
+# Exercicio 01
 x = int(input("Digite um número: "))
 print("O número informado foi,", x, ".")
 
@@ -17,7 +18,8 @@ numero3: int = int(input("Digite um número 03: "))
 numero4: int = int(input("Digite um número 04: "))
 soma: int = numero1 + numero2 + numero3 + numero4
 media: int = soma/4
-print(f"A média entre {numero1}, {numero2}, {numero3}, {numero4} é {media}.")
+print(f"""A média entre {numero1}, {numero2}
+      ,{numero3}, {numero4} é {media}.""")
 
 # Exercicio 04
 lado = int(input("Digite um lado do quadrado: "))
