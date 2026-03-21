@@ -13,4 +13,4 @@ for vez in range(5):
         print("Processamento interrompido")
         break # interrompe laço
 else:
-    
+    print("Sequência processada com sucesso" )
