@@ -12,7 +12,7 @@ usuarios: dict = {'aluno_senai': '1234', 'valeu':'00289'
 tentativa = 0 # tentativas de acesso
 
 # Laço para tentativas
-while tentativa <= 3:
+for tentativa in range(3):
     # Pega dados do usuário
     username: str = input("Usuário: ")
     senha: str = input("Senha: ")

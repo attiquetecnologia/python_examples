@@ -1,3 +1,6 @@
 alunos = ["João", "Maria", "Pedro", "Paulo", "Tiago"]
 
-for p in range(10)
+for aluno in alunos:
+    if aluno == "Pedro":
+        print(f"Aluno {aluno} encontrado")
+        break
