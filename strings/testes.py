@@ -35,5 +35,3 @@ frase = "Eu gosto de programar em Java!"
 print(frase)
 linguagem = input("Diga qual linguagem favorita? ")
 linguagem = linguagem.replace("Java", "Python")
-print(linguagem)
-
