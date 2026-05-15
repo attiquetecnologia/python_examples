@@ -21,3 +21,17 @@ while True:
 
     tentativa += 1
     senha +=1
+
+
+
+def pergunta_ok(mensagem, tentativas=4, lembrete='Por favor, tente novamente!'):
+    while True:
+        resposta = input(mensagem)
+        if resposta in {'s', 'sim', 'é'}:
+            return True
+        if resposta in {'n', 'não', 'nah'}:
+            return False
+        tentativas = tentativas - 1
+        if tentativas < 0:
+            raise ValueError('resposta inválida de usuário')
+        print(lembrete)    
