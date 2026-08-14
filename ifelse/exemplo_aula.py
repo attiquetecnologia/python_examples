@@ -25,3 +25,8 @@ if contagem % 2 == 0:
     print("Par")
 else:
     print("Impar")
+
+# Exemplo 04
+idade = int(input("Digite sua idade: "))
+if idade >= 18:
+    print("Você é maior de idade.") 
